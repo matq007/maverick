@@ -12,7 +12,7 @@
       <section>
         <ul>
           {{ range (first .Site.Params.items (where .Site.RegularPages "Section" "posts" ).ByDate.Reverse) }}
-            <li>Daily from <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
           {{ end }}
         </ul>
       </section>
